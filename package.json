@@ -1,0 +1,21 @@
+{
+  "name": "yhxpz",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/super-init/yhxpz.git",
+  "author": "super-init <54436293+super-init@users.noreply.github.com>",
+  "license": "MIT",
+  "scripts": {
+    "docs:dev": "vuepress dev .",
+    "docs:build": "vuepress build ."
+  },
+  "devDependencies": {
+    "@vuepress/plugin-back-to-top": "^1.8.2",
+    "vuepress": "^1.8.2"
+  },
+  "dependencies": {
+    "@vssue/api-github-v4": "^1.4.7",
+    "@vssue/vuepress-plugin-vssue": "^1.4.8",
+    "vuepress-theme-reco": "^1.6.6"
+  }
+}
