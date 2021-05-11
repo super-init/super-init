@@ -1,4 +1,5 @@
 module.exports = {
+    base:"/yhxpz/",
     theme: 'reco',
     title:"yh的个人小破站",
     description:"有一份光，便有一份热",
