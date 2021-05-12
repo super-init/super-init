@@ -1,9 +1,11 @@
 module.exports = {
-    base:"/yhxpz/",
+    // base:"./",
     theme: 'reco',
-    title:"yh的个人小破站",
+    title:"yh的小破站",
     description:"有一份光，便有一份热",
-    subSidebar: 'auto',
+    head: [
+        ['meta', { name: 'viewport', content: 'width=device-width,initial-scale=1,user-scalable=no' }]
+    ],
     themeConfig: {
         author: 'yh',
         authorAvatar: 'assets/img/avatar.jpeg',
@@ -30,14 +32,14 @@ module.exports = {
             {
                 text:"分类",
                 items:[
-                    {text: "java",link:"/note/"},
-                    {text: 'python',link:'/note/python/'}
+                    {text: "java",link:"/categories/java/"},
+                    {text: 'python',link:'/categories/python/'},
+                    {text: 'kotlin',link:'/categories/kotlin/'},
                     ]
 
             },
             {text:"留言板",link:'/recommend/',icon:'reco-suggestion'},
             {text:'github',link: "https://github.com/super-init",icon: "reco-github"},
-            {text:'关于',link:'/about',icon: 'reco-three'}
         ],
         friendLink: [
             {
@@ -65,6 +67,33 @@ module.exports = {
             clientSecret: '64b770d33fa41a0e2e4815edd0410f14ebdee323',
             // autoCreateIssue: true,//自动创建评论
         },
-        '@vuepress/back-to-top':true
+        '@vuepress/back-to-top':true,
+        "@vuepress-reco/vuepress-plugin-bgm-player":{
+            audios: [
+                // 本地文件示例
+                {
+                    name: '七里香',
+                    artist: '周杰伦',
+                    url: 'https://freetyst.nf.migu.cn/public%2Fproduct5th%2Fproduct35%2F2019%2F10%2F1618%2F2009%E5%B9%B406%E6%9C%8826%E6%97%A5%E5%8D%9A%E5%B0%94%E6%99%AE%E6%96%AF%2F%E5%85%A8%E6%9B%B2%E8%AF%95%E5%90%AC%2FMp3_64_22_16%2F60054701934.mp3',
+                    cover: 'https://mcontent.migu.cn/newlv2/new/album/20200918/7949/s_XqFeoZdGOiPaNgY8.jpg'
+                },
+                // 网络文件示例
+                {
+                    name: '迷迭香',
+                    artist: '周杰伦',
+                    url: 'https://freetyst.nf.migu.cn/public%2Fproduct5th%2Fproduct27%2F2018%2F12%2F27%2F2009%E5%B9%B406%E6%9C%8826%E6%97%A5%E5%8D%9A%E5%B0%94%E6%99%AE%E6%96%AF%2F%E5%85%A8%E6%9B%B2%E8%AF%95%E5%90%AC%2FMp3_64_22_16%2F60054701969.mp3',
+                    cover: 'https://mcontent.migu.cn/newlv2/new/album/20200813/7952/s_kIGBjwOvC0KkiCoi.jpg'
+                },
+                {
+                    name: '花海',
+                    artist: '周杰伦',
+                    url: 'https://freetyst.nf.migu.cn/public%2Fproduct5th%2Fproduct33%2F2019%2F05%2F2314%2F2009%E5%B9%B406%E6%9C%8826%E6%97%A5%E5%8D%9A%E5%B0%94%E6%99%AE%E6%96%AF%2F%E5%85%A8%E6%9B%B2%E8%AF%95%E5%90%AC%2FMp3_64_22_16%2F60054702003.mp3',
+                    cover: 'https://mcontent.migu.cn/newlv2/new/album/20210119/25578/s_vPL10Hr244aBlS33.jpg'
+                }
+            ]
+        },
+        "vuepress-plugin-auto-sidebar":{
+
+        }
     },
 }

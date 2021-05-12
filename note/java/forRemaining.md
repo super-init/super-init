@@ -1,10 +1,10 @@
 ---
-title:forEachRemaining的用法
-categories:
- - java
+title: forEachRemaining的用法
+categories: java
 tags:
  - java
  - 方法
+date: '2021-3-14'
 ---
 forEachRemaining()是java1.8新增的Iterator接口中的默认方法
 对于这个方法，官方文档是这么描述的：
@@ -172,3 +172,4 @@ public class Test
 
 ```
 可以看到，当我们第一次用迭代器遍历时，只让它遍历五次就跳出循环，那么就还剩下五个元素，再调用forEachRemaining()方法，就可以看到输出后五个元素了
+<Vssue />

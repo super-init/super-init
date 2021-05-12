@@ -1,4 +1,5 @@
 ---
-title:留言板
+title: 留言板
+subSidebar: false
 ---
 <Vssue />
