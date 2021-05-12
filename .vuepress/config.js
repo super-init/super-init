@@ -3,6 +3,7 @@ module.exports = {
     theme: 'reco',
     title:"yh的小破站",
     description:"有一份光，便有一份热",
+
     head: [
         ['meta', { name: 'viewport', content: 'width=device-width,initial-scale=1,user-scalable=no' }]
     ],
@@ -11,6 +12,15 @@ module.exports = {
         authorAvatar: 'assets/img/avatar.jpeg',
         // 博客配置
         type: 'blog',
+        vssueConfig: {
+                platform: 'github-v3',
+                // 其他的 Vssue 配置
+                owner: 'super-init',
+                repo: 'yhxpz',
+                clientId: 'ac022b0da0fe5f79279a',
+                clientSecret: '64b770d33fa41a0e2e4815edd0410f14ebdee323',
+                autoCreateIssue: true,//自动创建评论
+        },
         blogConfig: {
             category: {
                 location: 2,     // 在导航栏菜单中所占的位置，默认2
@@ -57,16 +67,16 @@ module.exports = {
         ]
     },
     plugins: {
-        '@vssue/vuepress-plugin-vssue': {
-            // 设置 `platform` 而不是 `api`
-            platform: 'github-v4',
-            // 其他的 Vssue 配置
-            owner: 'super-init',
-            repo: 'yhxpz',
-            clientId: 'ac022b0da0fe5f79279a',
-            clientSecret: '64b770d33fa41a0e2e4815edd0410f14ebdee323',
-            // autoCreateIssue: true,//自动创建评论
-        },
+        // '@vssue/vuepress-plugin-vssue': {
+        //     // 设置 `platform` 而不是 `api`
+        //     platform: 'github-v3',
+        //     // 其他的 Vssue 配置
+        //     owner: 'super-init',
+        //     repo: 'yhxpz',
+        //     clientId: 'ac022b0da0fe5f79279a',
+        //     clientSecret: '64b770d33fa41a0e2e4815edd0410f14ebdee323',
+        //     autoCreateIssue: true,//自动创建评论
+        // },
         '@vuepress/back-to-top':true,
         "@vuepress-reco/vuepress-plugin-bgm-player":{
             audios: [
