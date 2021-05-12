@@ -1,5 +1,10 @@
 ---
 title:forEachRemaining的用法
+categories:
+ - java
+tags:
+ - java
+ - 方法
 ---
 forEachRemaining()是java1.8新增的Iterator接口中的默认方法
 对于这个方法，官方文档是这么描述的：
